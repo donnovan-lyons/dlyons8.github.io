@@ -1,11 +1,11 @@
 # Site settings
 author: Donnovan Lyons
-title: 
+title: Reboot
 header-img: img/home-bg.png
 email: dlyons8@binghamton.edu
 copyright_name: Donnovan Lyons
 description: > # this means to ignore newlines until "baseurl:"
-  
+  From Coding Bootcamp to Full-Stack Web Developer | Software Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  dlyons8
