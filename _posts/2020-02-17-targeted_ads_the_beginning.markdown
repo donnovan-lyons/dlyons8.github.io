@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Targeted Ads: The Beginning"
+title:      "The Beginning: Targeted Ads"
 date:       2020-02-17 13:41:47 -0500
 permalink:  targeted_ads_the_beginning
 ---
