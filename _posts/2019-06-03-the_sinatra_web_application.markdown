@@ -5,7 +5,7 @@ date:       2019-06-03 22:23:31 -0300
 permalink:  the_sinatra_web_application
 ---
 
-Utilizing Sinatra for my first foray into building a web application was intimidating. There's the visualization of the ideal: what it is you want to obtain. Then there's the reality. That is, the limitations of what you can obtain in a reasonable amount of time within the framework of knowledge that you already have and can expand on. I for example, have a limited amount of CSS knowledge, and as much as I'd love to be able to create beautiful web applications, my goal was to create something functional and demonstrate my ability to build a solid web application.
+Utilizing Sinatra for my first foray into building a web application was intimidating. There's the visualization of the ideal: what it is you want to achieve. Then there's the reality. That is, the limitations of what you can accomplish in a reasonable amount of time within the framework of knowledge that you already have and can expand on. I for example, have a limited amount of CSS knowledge, and as much as I'd love to be able to create beautiful web applications, my goal was to create something functional and demonstrate my ability to build a solid web application.
 
 ### The Skeleton
 
