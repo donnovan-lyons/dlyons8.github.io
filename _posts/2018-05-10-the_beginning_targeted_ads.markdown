@@ -16,9 +16,9 @@ Sometimes, we get trapped in the pursuit of a goal or objective, and after inves
 
 Where do I redirect my future? What could I do with my current skill set that would enable me to have a decent living, explore my entrepreneur-ish ambitions, and affect change in the world?
 
-Doubtful, and unsure of what to do, I decided I'd revamp myself. After about a decade of not having Facebook, I decided I would give it a good solid try. I re-established connections that I'd lost over the years. I allowed Linkedin to do what it wanted with my contacts and obtained as large a network as I possibly could with the people that I already knew. I even took Steve Jobs advice to heart, trusted that my dots would connect in the future somehow, and never settled, and instead remained hungry and foolish until the very end.
+Doubtful, and unsure of what to do, I decided I'd revamp myself. After about a decade of not having Facebook, I decided I would give it a good solid try. I re-established connections that I'd lost over the years. I allowed Linkedin to finally import all of my contacts and obtained as large a network as I possibly could with the people that I already knew. I'd take Steve Jobs' advice to heart, trusted that my dots would connect in the future somehow, and never settled, and instead remained hungry and foolish until the very end.
 
-I applied for jobs within the scope of my experience, as well as a job here or there that I thought I could use to make a career change. l had sent out dozens of applications to different positions, while dubious that I would find anything that I love, that would ignite me with passion, or that I could genuinely infuse with my own creativity. What about that idealistic college student who thought he could positively impact the world?
+And so I applied for jobs within the scope of my experience, as well as a job here or there that I thought I could use to make a career change. I had sent out dozens of applications to different positions, while at the same time dubious that I'd find anything that I could love, that would ignite me with passion, or that I could genuinely infuse with my own creativity. What about that idealistic college student who thought he could positively impact the world?
 
 ### The Ad That Changed Everything
 
@@ -29,7 +29,7 @@ I had learned this primarily through Facebook over the few months that I was usi
 ![](https://imgur.com/TuEpZ30.png)
 
 
-Before this ad, I'd heard of computer science, but it wasn't on my radar... *at all.* Neither was software engineering, computer programming, etc. Growing up, I didn't know anyone in these fields. At most, my only experience in this world was an introduction to HTML class in high school.
+Before this ad, I'd heard of computer science, but it wasn't on my radar... *at all.* Neither was software engineering, computer programming, etc. Growing up, I didn't know anyone in these fields. At most, my only experience in this world was an introduction to a class on HTML in high school.
 
 So when I saw that I could become a web developer in 12 weeks, I had to explore it.
 
