@@ -73,9 +73,9 @@ Each of these were divided into their own respective methods. `greeting` would b
 
 To make certain the CLI interface would work as planned, I created dummy data in the `list_options` method. The idea here was to fake the data, and get a more fleshed out interface only to replace the fake data with real data sourced from the website itself.
 
-### Making Things Reals
+### Making Things Real
 
-I knew immediately the nokogiri and pry gems would be necessary, so they were placed in the gemspec file.
+I knew immediately the Nokogiri and pry gems would be necessary, so they were placed in the gemspec file.
 
 The essential and most important part here was to use Nokogiri to extract the data from the HTML and its embedded nodes. Specifically, by obtaining the URL of a particular movie, one should be able to extract the: title, year, watch_with, watch_when, genre, review, stars in movie, movie rating, movie language, and url.
 
