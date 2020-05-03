@@ -1,8 +1,8 @@
 ---
 layout: post
 title:      "The Beginning: Targeted Ads"
-date:       2020-02-17 13:41:47 -0500
-permalink:  targeted_ads_the_beginning
+date:       2018-05-10 17:45:06 -0400
+permalink:  the_beginning_targeted_ads
 ---
 
 
@@ -10,7 +10,7 @@ permalink:  targeted_ads_the_beginning
 
 It was 2017. 
 
-I wasn't happy, and I wasn't sure what I wanted to do with my life. I had graduated a few years earlier with an undergraduate degree in Sociology, and spent another two part-time on a Masters in Biology as I worked towards establishing a career in healthcare. After a decade of adulthood, my plans to enter into a career of medicine hadn’t materialized into anything promising, and further investment into such endeavors would be too costly, both financially and in terms of time.
+I wasn't happy with my current career trajectory, and I wasn't sure what I wanted to do with my life. I had graduated a few years earlier with an undergraduate degree in Sociology, and spent another two part-time on a Masters in Biology as I worked towards establishing a career in healthcare. After a decade of adulthood, my plans to enter into a career of medicine hadn’t materialized into anything promising, and further investment into such endeavors would be too costly, both financially and in terms of time.
 
 Sometimes, we get trapped in the pursuit of a goal or objective, and after investing so much time into a path, one may feel that after coming so far along, their only option is to continue going forward. Combine that with the idealism of having a positive impact on the world, and fulfillment of some grand purpose, taking a look at any alternatives was unnerving.
 
