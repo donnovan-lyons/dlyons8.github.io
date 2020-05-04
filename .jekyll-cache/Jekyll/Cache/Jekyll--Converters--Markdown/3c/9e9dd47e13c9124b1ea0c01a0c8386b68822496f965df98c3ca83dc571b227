@@ -1,0 +1,85 @@
+I"�<p>Weird title, right? You’re probably wondering what in the world does a spaceship in the spring have to do with my coding journey. Let me tell you:</p>
+
+<p>Nothing.</p>
+
+<p>Except, if Sinatra was like driving car, it certainly feels like learning Rails was like walking into a spaceship and trying to fly it to a destination of my choice.</p>
+
+<p><img src="https://media.giphy.com/media/3ov9jPghXAsbvLmcjm/giphy.gif" alt="Spaceship controls" /></p>
+
+<p>And that’s how big Rails is. It’s magical, and I didn’t realize just how much so until I began to implement all of the site planning that I had done for my third Project. Enter Ruby on Rails.</p>
+
+<h3 id="so-let-me-tell-you-about-the-spring">So Let me Tell You About the Spring</h3>
+
+<p>Every year in the spring time, Jews around the world begin preparing for a holiday called Passover. That entails selling and searching and cleaning out anything which may have in it leavened grains. Yet when it comes to cleaning, people sometimes decide to go above and beyond the basics. They clean out their vehicles, bookshelves, cabinet drawers and entire homes. This is a lot of work however, and often times help is hired as result. Here in Jerusalem, Israel where I’m studying, it’s common practice for students who have the time off to take advantage of this opportunity to go and clean homes for money. So, a friend and I thought:  This would be a great time to make some money, but why not create something that would enable us to help others find work and benefit from it as well? Hence</p>
+
+<p><img src="https://imgur.com/IkTg8AN.png" alt="Spring `Cleaner`s Logo" /></p>
+
+<p>It’s one of my favorite things about learning how to code. If there is a tool that I need, I have the ability or the wherewithal now to construct that tool.</p>
+
+<h3 id="breaking-it-down-with-model-relations">Breaking it down with Model Relations</h3>
+
+<h4 id="models">Models</h4>
+
+<p>And what I wanted was relatively simple. There are two types of <code class="highlighter-rouge">User</code>s: a <code class="highlighter-rouge">Cleaner</code> and a <code class="highlighter-rouge">Customer</code>. A <code class="highlighter-rouge">Customer</code> creates an <code class="highlighter-rouge">Appointment</code>, and a <code class="highlighter-rouge">Cleaner</code> picks up any available <code class="highlighter-rouge">Appointment</code>s. Thus, <code class="highlighter-rouge">Appointment</code>s have three statuses: pending, confirmed, and completed.</p>
+
+<p>So I infered from that, that a <code class="highlighter-rouge">Cleaner</code> should have many <code class="highlighter-rouge">Appointment</code>s, and many <code class="highlighter-rouge">Cleaner</code>s through <code class="highlighter-rouge">Appointment</code>s, and vice-versa. The only difference is, <code class="highlighter-rouge">Cleaner</code>s create the <code class="highlighter-rouge">Appointment</code>s, and an <code class="highlighter-rouge">Appointment</code> does not need to have a <code class="highlighter-rouge">Cleaner</code> id.</p>
+
+<p>A <code class="highlighter-rouge">Cleaner</code> would belong to an <code class="highlighter-rouge">Institution</code>, and an <code class="highlighter-rouge">Institution</code> would have many <code class="highlighter-rouge">Cleaner</code>s. This way, students like me can have access to two addresses depending on whether we’re located at a residence or institution.</p>
+
+<p>Finally, a <code class="highlighter-rouge">User</code> would have many <code class="highlighter-rouge">Conversation</code>s, and a <code class="highlighter-rouge">Conversation</code> would have many <code class="highlighter-rouge">Message</code>s. A <code class="highlighter-rouge">Message</code> belongs to a <code class="highlighter-rouge">Conversation</code>, and a <code class="highlighter-rouge">Conversation</code> would belong to a <code class="highlighter-rouge">User</code>.</p>
+
+<h4 id="views">Views</h4>
+
+<p>For views, a <code class="highlighter-rouge">User</code> logs in, and is taken to a page that shows 3-4 options. For <code class="highlighter-rouge">Cleaner</code>s:</p>
+
+<ol>
+  <li>Find a Home to Clean (view with all pending Appointments)</li>
+  <li>My Current Jobs (view with all Appointments that have that Cleaner’s ID and has a status of “Confirmed”)</li>
+  <li>My Completed Jobs (view with all Appointments that have that Cleaner’s ID and has a status of “Completed”)</li>
+  <li>Help</li>
+</ol>
+
+<p>and <code class="highlighter-rouge">Customer</code>s:</p>
+
+<ol>
+  <li>Schedule a <code class="highlighter-rouge">Cleaner</code> (view with Cleaner form to schedle appointment)</li>
+  <li>View Scheduled <code class="highlighter-rouge">Cleaner</code>s (view with all appointments and their statuses)</li>
+  <li>Help</li>
+</ol>
+
+<p>The Help button would take them to a page that enables them to contact the admin of the site, i.e. me or my aforementioned friend. The Customer/Cleaner views are self-explanatory.</p>
+
+<p>For <code class="highlighter-rouge">Message</code>s, we’d have a <code class="highlighter-rouge">Conversation</code>s index that showed a list of all the <code class="highlighter-rouge">Conversation</code>s, and a <code class="highlighter-rouge">Message</code>s index that showed all the <code class="highlighter-rouge">Message</code>s in that particular <code class="highlighter-rouge">conversation</code>.</p>
+
+<p>These models would have their respective controllers, and we’d add a <code class="highlighter-rouge">Session</code>s and <code class="highlighter-rouge">Welcome</code> controller for logging in and a welcome page respectively.</p>
+
+<h4 id="complications">Complications</h4>
+
+<p>All of that looked beautiful until I realized that there’s a need to differentiate between the two <code class="highlighter-rouge">User</code> types. How do I route them to their respective views? How does that work with signing up?</p>
+
+<p>What about <code class="highlighter-rouge">Conversation</code>s? Can that be a join table between two <code class="highlighter-rouge">User</code>s, or could a <code class="highlighter-rouge">Cleaner</code> only interact with a <code class="highlighter-rouge">Customer</code> and vice-versa?</p>
+
+<h3 id="my-answers">My Answers</h3>
+
+<p>The resolution to these problems resulted in learning about some of the complexities of Rails and Table Relations. For the User class, my options were Single Table Inheritance(STI) or Multi Table Inheritance(MTI) with Polymorphic Referencing also a seemingly viable option.</p>
+
+<p>In the end I decided to forego all three options of the above and instead simply setup my <code class="highlighter-rouge">User</code> class so that it has_one <code class="highlighter-rouge">Cleaner</code> and <code class="highlighter-rouge">Customer</code>. This decision hopefully enables the application to be able to be scaled next year when the application goes live and in production.</p>
+
+<p>As far as <code class="highlighter-rouge">Conversation</code>s go, I discovered the ability to creating two separate foreign_keys pointing to the same <code class="highlighter-rouge">User</code> class, e.g.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+class Conversation &lt; ActiveRecord::Base
+    belongs_to :sender, :foreign_key =&gt; :sender_id, class_name: 'User'
+    belongs_to :recipient, :foreign_key =&gt; :recipient_id, class_name: 'User'
+end
+
+</code></pre></div></div>
+
+<p>This lets rails know that we have two different types of Users that the Conversation class belongs to, thereby distinguishing between a User that sends the message and a User that receives the message.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Add a little OAuth, user authentications, and some css design to all of this (things that would require blog posts of their own), and this is what a few dozen hours of building a Ruby on Rails app in a nutshell looks like.</p>
+
+<p>Check it out in this video <a href="https://youtu.be/CZKtuUlo5qw">Spring Cleaners Walkthrough</a>.</p>
+:ET

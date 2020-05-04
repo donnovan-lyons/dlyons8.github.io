@@ -1,0 +1,96 @@
+I"�<h3 id="can-you-help-me-to-watch-a-movie">Can you help me to watch a movie?</h3>
+
+<p>For my first project, I built out an application that provides a Command Line Interface (CLI) to a public website, and used that as the source for all the data in my app. How?</p>
+
+<p>Scraping. What’s scraping you may ask?</p>
+
+<p>Wikipedia defines it in the following way: “Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites.” Basically, what that means is that through writing code, I’m able to take almost anything that I see on a website, encapsulate into class objects (via object oriented programming), and feed that to my application which organizes it and churns it back out to the user in an organized and useful way, i.e. through my CLI!</p>
+
+<p>The problem with creating such a program however, is that by writing code to scrape data from a website, I can run into bugs later on if that website changes, because the code that I use to scrape the data may no longer be applicable to the redesigned website, and I’d have no choice to but rewrite the code I use to scrape.</p>
+
+<p>This article walks you through my thought process, some of the tools I used, and how the code works.</p>
+
+<p>After a brief browse, I decided on using the website <a href="https://agoodmovietowatch.com/">A Good Movie To Watch</a>. It’s a website with a movie database curated by actual people, and it provides users with the option of selecting their movie randomly, by mood, best films,  latest suggestions, and more. A clicking of any of the links to these categories on the website would then result in a page of one or more suggestions.</p>
+
+<p>Any project requires planning, and so I planned according to the following steps:</p>
+
+<hr />
+
+<ol>
+  <li>Imagine interface.</li>
+  <li>Start with project structure.</li>
+  <li>Start with the entry point - the file run.</li>
+  <li>Force that to build the CLI interface.</li>
+  <li>Stub out the interface.</li>
+  <li>Start making things real.</li>
+  <li>Discover objects.</li>
+  <li>Program.</li>
+</ol>
+
+<h3 id="imagining-the-interface">Imagining the Interface</h3>
+
+<p>The interface that I wanted was one in which a user wants a movie, loads up our app, and then is presented with three options:</p>
+
+<ol>
+  <li>Random</li>
+  <li>Best Films</li>
+  <li>Latest Suggestions</li>
+</ol>
+
+<p>Option 1 would allow a user to randomly select a movie, one at a time. Options 2 and 3 would create a drop down list where a user can select a movie based on the appeal of the title, and obtain more information about it.</p>
+
+<h3 id="project-structure">Project Structure</h3>
+
+<p>The process to creating a ruby gem is made really simple. I began my process by perusing the <a href="https://bundler.io/v1.13/guides/creating_gem">Developing a RubyGem using Bundler guide</a> and decided on using Bundler, because it makes gem dependency management and the accomplishment of publishing my gem to RubyGems easier.</p>
+
+<p>After checking what version of Bundler I had, let the gem creations begin!</p>
+
+<p><code class="highlighter-rouge">bundle gem movie-helper</code></p>
+
+<p>The beautiful thing about Bundler, is that it creates for you the Gemfile, Rakefile, Code of Conduct, license, Gem specification file, and more.</p>
+
+<p>There would be three classes: CLI, Movie, and Scraper. The CLI class would contain all of the logic necessary to properly navigate through the application while managing the interaction between the Scraper and Movie classes. The Movie class would be the objects that are instantiated from the data collected by the Scraper class.</p>
+
+<h3 id="the-file-run">The File Run</h3>
+
+<p>Wanting the bin file to be nice and short, the key here was to simply invoke a CLI method that would contain all of the CLI logic for a fully functional app. In this instance, <code class="highlighter-rouge">.call</code>.</p>
+
+<h3 id="the-cli-interface">The CLI Interface</h3>
+
+<p>What I typically do when creating my CLI interfaces is, I create my <code class="highlighter-rouge">.call</code> method by dividing up each concern that I have. I want my app to</p>
+
+<ol>
+  <li>Greet the User</li>
+  <li>Scrape the Data</li>
+  <li>Provide interactive menu</li>
+  <li>Close program</li>
+</ol>
+
+<p>Each of these were divided into their own respective methods. <code class="highlighter-rouge">greeting</code> would be the method that welcomed the user simply by printing strings.  <code class="highlighter-rouge">load</code> would obtain all of the information inside of the app through scraping. <code class="highlighter-rouge">list_options</code> would print the menu for the user to interact with and capture any inputs. <code class="highlighter-rouge">goodbye</code> is another method that thanked the user for using their app.</p>
+
+<h3 id="stubbing-out-the-interface">Stubbing Out the Interface</h3>
+
+<p>To make certain the CLI interface would work as planned, I created dummy data in the <code class="highlighter-rouge">list_options</code> method. The idea here was to fake the data, and get a more fleshed out interface only to replace the fake data with real data sourced from the website itself.</p>
+
+<h3 id="making-things-real">Making Things Real</h3>
+
+<p>I knew immediately the <code class="highlighter-rouge">nokogiri</code> and <code class="highlighter-rouge">pry</code> gems would be necessary, so they were placed in the gemspec file.</p>
+
+<p>Nokogiri is what makes scraping a reality, as it parses out the HTML documents and makes them searchable via CSS3 selectors. Thus, the essential and most important part here was to use Nokogiri to extract the data from the HTML and its embedded nodes.</p>
+
+<p>Therefore by obtaining the URL of a particular movie, with Nokogiri one should be able to extract the: title, year, watch_with, watch_when, genre, review, stars in movie, movie rating, movie language, and url.</p>
+
+<h3 id="discover-objects">Discover Objects</h3>
+
+<p>Each of the bits of data scraped for each movie were then placed into a hash. A hash would be used to initialized a movie, and each key would equate to each attribute in order to create full objects.</p>
+
+<h3 id="program">Program</h3>
+
+<p>The final part of creating this CLI was replacing the dummy data used to flesh out the interface, and ensuring that the methods that we needed to initialize a Movie, and display its attributes were created.</p>
+
+<p>See the final product in action below:</p>
+
+<p><a href="https://youtu.be/GWNkktgsH7E">Movie Helper Walkthrough</a></p>
+
+<p>You can also download this published gem at <a href="https://rubygems.org/gems/movie_helper">RubyGems.org</a>!</p>
+:ET

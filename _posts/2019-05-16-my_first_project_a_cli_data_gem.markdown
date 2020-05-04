@@ -75,9 +75,11 @@ To make certain the CLI interface would work as planned, I created dummy data in
 
 ### Making Things Real
 
-I knew immediately the Nokogiri and pry gems would be necessary, so they were placed in the gemspec file.
+I knew immediately the `nokogiri` and `pry` gems would be necessary, so they were placed in the gemspec file.
 
-The essential and most important part here was to use Nokogiri to extract the data from the HTML and its embedded nodes. Specifically, by obtaining the URL of a particular movie, one should be able to extract the: title, year, watch_with, watch_when, genre, review, stars in movie, movie rating, movie language, and url.
+Nokogiri is what makes scraping a reality, as it parses out the HTML documents and makes them searchable via CSS3 selectors. Thus, the essential and most important part here was to use Nokogiri to extract the data from the HTML and its embedded nodes.
+
+Therefore by obtaining the URL of a particular movie, with Nokogiri one should be able to extract the: title, year, watch_with, watch_when, genre, review, stars in movie, movie rating, movie language, and url.
 
 ### Discover Objects
 

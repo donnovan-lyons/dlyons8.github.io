@@ -1,0 +1,2 @@
+I"<p>My cohort at the Flatiron School was assigned it’s first technical coding challenge as a segue for when we begin our technical interviews during our job search in the coming months. In this challenge, we were asked to take the following start to a series of numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34…, and write a function that takes n as an argument and prints the nth number in the sequence, with each subsequent number equal to the preceding two numbers in the sequence. This type of sequence is known as a Fibonacci sequence.</p>
+:ET

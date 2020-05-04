@@ -1,15 +1,15 @@
 ---
 layout: post
-title:      "Algorithms"
+title:      "An Intro To Algorithms"
 date:       2018-06-17 12:50:13 -0400
-permalink:  algorithms
+permalink:  an_intro_to_algorithms
 ---
 
 What I knew of algorithms prior to coding, was strictly limited to 
 
->“a formula that computers use to take data and solve a problem.” 
+> “a formula that computers use to take data and solve a problem.” 
 
-I knew that Google had an amazing search algorithm, and that in the world of biology, they were also used in the sequencing of DNA. However, after venturing into the world of computer programming, one of the things that kept popping up are the importance of knowing how to solve certain algorithmic problems, especially for the coding interviews that I expect to encounter during thejob search. After reading the blogs of, and speaking to other bootcamp graduates, it seemed apparent that in general, although we come out of our immersive with the necessary practical programming and web design skills that we need, we’re a little weaker when it comes to algorithms. After all, up until I researched the topic for this blog, I only had a vague idea of what an algorithm actually is! Not to mention, it’s not really covered in our curriculum here at the Flatiron School and other coding bootcamps.
+I knew that Google had an amazing search algorithm, and that in the world of biology, they were also used in the sequencing of DNA. However, after venturing into the world of computer programming, one of the things that kept popping up are the importance of knowing how to solve certain algorithmic problems, especially for the coding interviews that I expect to encounter during the job search. After reading the blogs of, and speaking to other bootcamp graduates, it seemed apparent that in general, although we come out of our immersive with the necessary practical programming and web design skills that we need, we’re a little weaker when it comes to algorithms. After all, up until I researched the topic for this blog, I only had a vague idea of what an algorithm actually is! Not to mention, it’s not really covered in our curriculum here at the Flatiron School and other coding bootcamps.
 
 ### So what is an algorithm?
 
