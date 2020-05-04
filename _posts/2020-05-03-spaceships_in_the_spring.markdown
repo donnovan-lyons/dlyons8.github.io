@@ -86,4 +86,4 @@ This lets rails know that we have two different types of Users that the Conversa
 
 Add a little OAuth, user authentications, and some css design to all of this (things that would require blog posts of their own), and this is what a few dozen hours of building a Ruby on Rails app in a nutshell looks like.
 
-Check it out in this video [Spring Cleaners Walkthrough](https://youtu.be/CZKtuUlo5qw).
+Check it out in this video [Spring Cleaners Walkthrough](https://youtu.be/dpEpxpvgnfs).
