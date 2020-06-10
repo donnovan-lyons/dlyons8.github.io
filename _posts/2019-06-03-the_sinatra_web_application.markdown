@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The Sinatra Web Application"
-date:       2019-06-03 22:23:31 -0300
+date:       2019-06-03 22:23:31 +0300
 permalink:  the_sinatra_web_application
 ---
 
