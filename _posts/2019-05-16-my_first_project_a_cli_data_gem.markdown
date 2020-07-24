@@ -83,11 +83,11 @@ Therefore by obtaining the URL of a particular movie, with Nokogiri one should b
 
 ### Discover Objects
 
-Each of the bits of data scraped for each movie were then placed into a hash. A hash would be used to initialized a movie, and each key would equate to each attribute in order to create full objects.
+Each of the bits of data scraped for each movie were then placed into a hash. A hash would be used to initialize a movie, and each key would equate to each attribute in order to create full objects.
 
 ### Program
 
-The final part of creating this CLI was replacing the dummy data used to flesh out the interface, and ensuring that the methods that we needed to initialize a Movie, and display its attributes were created.
+The final part of creating this CLI was replacing the dummy data used to flesh out the interface and ensuring that the methods that we needed to initialize a Movie, and display its attributes were created.
 
 See the final product in action below:
 

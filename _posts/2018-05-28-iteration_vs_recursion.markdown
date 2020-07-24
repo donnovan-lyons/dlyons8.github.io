@@ -5,14 +5,13 @@ date:       2018-05-28 11:12:50 -0400
 permalink:  iteration_vs_recursion
 ---
 
-
-My cohort at the Flatiron School was assigned it’s first technical coding challenge as a segue for when we begin our technical interviews during our job search in the coming months. In this challenge, we were asked to take the following start to a series of numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34…, and write a function that takes n as an argument and prints the nth number in the sequence, with each subsequent number equal to the preceding two numbers in the sequence. This type of sequence is known as a Fibonacci sequence.
+My cohort at the Flatiron School was assigned its first technical coding challenge as a segue for when we begin our technical interviews during our job search in the coming months. In this challenge, we were asked to take the following start to a series of numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34…, and write a function that takes n as an argument and prints the nth number in the sequence, with each subsequent number equal to the preceding two numbers in the sequence. This type of sequence is known as a Fibonacci sequence.
 
 At the end was a bonus question, “How could we refactor your solution to use recursion?” 
 
-I was intrigued. Prior to this, I had never heard of recursion, or of using it to solve a problem. So when our instructor went over the concept, I was confused. The same method that we were defining, was in itself a part of the method.
+I was intrigued. Prior to this, I had never heard of recursion, or of using it to solve a problem. So, when our instructor went over the concept, I was confused. The same method that we were defining, was in itself a part of the method.
 
-It was a little more abstract than I was used to, and was one of the first real time examples in which I was able to clearly see how choosing how to solve a problem can ultimately affect how well your code will run under certain conditions. I needed to explore this concept further, and so I did that in three steps.
+It was a little more abstract than I was used to and was one of the first real time examples in which I was able to clearly see how choosing how to solve a problem can ultimately affect how well your code will run under certain conditions. I needed to explore this concept further, and so I did that in three steps.
 
 ### Defining recursion. What is it?
 
@@ -36,7 +35,7 @@ end
 ```
 
 Now recursion requires that the method being defined is called within itself. It would also need to terminate once it reaches a certain condition, as well as get closer to that condition with each recursive call.
-So let’s re-write the above iterative method and turn it into a recursive.
+So, let’s re-write the above iterative method and turn it into a recursive.
 
 ```
 def countdown_recursive(n)
@@ -50,7 +49,6 @@ Here, the condition is that our integer, n is equal to zero. After we check for 
 A great analogy that we can use to explain the concept of the recursion method is the Russian Matryoshka doll:
 
 ![](https://imgur.com/b5MDvOZ.jpg)
-
 
 ### Why or when should a recursive method be used?
 
@@ -126,7 +124,7 @@ end
 
 In this CLI game, the game starts when the `#runner` method is run. Then a welcome message is initially printed to the screen via the `#welcome` method, and via `#initial_round` an initial number is given based on the sum of two randomly picked numbers between 1 and 11. Then an until loop is entered. This is where our recursive method comes into play. The hit method prompts the user to enter “h” or “s” If anything else is an entered, an invalid response is entered, and we go into the recursive method that remains infinite until a desired response is entered.
 
-This  is only the beginning of my understanding of the use of recursion. The benefits of using recursion will also vary depending on the language used, and appears to be more commonly used to solve more mathematically related problems than what is required for full-stack web development.
+This is only the beginning of my understanding of the use of recursion. The benefits of using recursion will also vary depending on the language used and appears to be more commonly used to solve more mathematically related problems than what is required for full-stack web development.
 
 Sources:
 

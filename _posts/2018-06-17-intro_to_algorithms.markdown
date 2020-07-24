@@ -9,13 +9,13 @@ What I knew of algorithms prior to coding, was strictly limited to
 
 > “a formula that computers use to take data and solve a problem.” 
 
-I knew that Google had an amazing search algorithm, and that in the world of biology, they were also used in the sequencing of DNA. However, after venturing into the world of computer programming, one of the things that kept popping up are the importance of knowing how to solve certain algorithmic problems, especially for the coding interviews that I expect to encounter during the job search. After reading the blogs of, and speaking to other bootcamp graduates, it seemed apparent that in general, although we come out of our immersive with the necessary practical programming and web design skills that we need, we’re a little weaker when it comes to algorithms. After all, up until I researched the topic for this blog, I only had a vague idea of what an algorithm actually is! Not to mention, it’s not really covered in our curriculum here at the Flatiron School and other coding bootcamps.
+I knew that Google had an amazing search algorithm, and that in the world of biology, they were also used in the sequencing of DNA. However, after venturing into the world of computer programming, one of the things that kept popping up are the importance of knowing how to solve certain algorithmic problems, especially for the coding interviews that I expect to encounter during the job search. After reading the blogs of, and speaking to other bootcamp graduates, it seemed apparent that in general, although we come out of our immersive with the necessary practical programming and web design skills that we need, we’re a little weaker when it comes to algorithms and other computer science fundamentals. After all, up until I researched the topic for this blog, I only had a vague idea of what an algorithm actually is! Not to mention, it’s not really covered in our curriculum here at the Flatiron School and other coding bootcamps.
 
 ### So what is an algorithm?
 
 An algorithm, on a very basic level can be defined as a set of steps to accomplish a task.
 
-We have algorithms in our every day life. For our daily commutes, preparation of food, or how we’d go about organizing a library of books.
+We have algorithms in our everyday life. For our daily commutes, preparation of food, or how we’d go about organizing a library of books.
 
 In computer science then, an algorithm is a set of steps for a computer program to accomplish a task. In the web today, algorithms are more popular than ever before. Consider these examples:
 
@@ -94,11 +94,11 @@ end
 
 ### What makes a good algorithm? Two primary factors:
 
-1.	Correctness.
+1.  Correctness.
 
-2.	Efficiency.
+2.  Efficiency.
 
-Finally, I want to note that a point of confusion may be the difference between algorithms and methods. There is a distinction. While methods can encapsulate any amount of code, an algorithm is a specific sequence of steps designed to complete it’s task. Algorithms are designed with specificity in mind along with a greater emphasis on computational efficiency. On the other hand, a method could be an algorithm, but can also be more vague or theoretical in its implementation, e.g. printing out a certain message a number of times.
+Finally, I want to note that a point of confusion may be the difference between algorithms and methods. There is a distinction. While methods can encapsulate any amount of code, an algorithm is a specific sequence of steps designed to complete its task. Algorithms are designed with specificity in mind along with a greater emphasis on computational efficiency. On the other hand, a method could be an algorithm, but can also be more vague or theoretical in its implementation, e.g. printing out a certain message a number of times.
 
 ### Why I decided to talk about Algorithms
 
@@ -115,10 +115,10 @@ It’s not all bad news though. Triplebyte also says “The first thing to note 
 How can we, as bootcamp graduates fill the gap?
 
 I found some resources for you below:
-•	https://www.interviewcake.com
-•	https://www.leetcode.com/
-•	MOOCS such as https://www.edx.org/ or https://www.coursera.org/
-•	[Cracking the Coding Interview by Gayle Laakmann Mcdowell](http://www.crackingthecodinginterview.com/)
+• https://www.interviewcake.com
+• https://www.leetcode.com/
+• MOOCS such as https://www.edx.org/ or https://www.coursera.org/
+• [Cracking the Coding Interview by Gayle Laakmann Mcdowell](http://www.crackingthecodinginterview.com/)
 
 Good luck.
 

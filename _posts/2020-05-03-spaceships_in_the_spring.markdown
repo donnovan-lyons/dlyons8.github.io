@@ -5,7 +5,6 @@ date:       2020-05-03 16:07:03 +0300
 permalink:  spaceships_in_the_spring
 ---
 
-
 Weird title, right? You’re probably wondering what in the world does a spaceship in the spring have to do with my coding journey. Let me tell you:
 
 Nothing.
@@ -18,7 +17,7 @@ And that's how big Rails is. It's magical, and I didn't realize just how much so
 
 ### So Let me Tell You About the Spring
 
-Every year in the spring time, Jews around the world begin preparing for a holiday called Passover. That entails selling and searching and cleaning out anything which may have in it leavened grains. Yet when it comes to cleaning, people sometimes decide to go above and beyond the basics. They clean out their vehicles, bookshelves, cabinet drawers and entire homes. This is a lot of work however, and often times help is hired as result. Here in Jerusalem, Israel where I'm studying, it's common practice for students who have the time off to take advantage of this opportunity to go and clean homes for money. So, a friend and I thought:  This would be a great time to make some money, but why not create something that would enable us to help others find work and benefit from it as well? Hence
+Every year in the springtime, Jews around the world begin preparing for a holiday called Passover. That entails selling and searching and cleaning out anything which may have in it leavened grains. Yet when it comes to cleaning, people sometimes decide to go above and beyond the basics. They clean out their vehicles, bookshelves, cabinet drawers and entire homes. This is a lot of work however, and often times help is hired as result. Here in Jerusalem, Israel where I'm studying, it's common practice for students who have the time off to take advantage of this opportunity to go and clean homes for money. So, a friend and I thought:  This would be a great time to make some money, but why not create something that would enable us to help others find work and benefit from it as well? Hence
 
 ![Spring `Cleaner`s Logo](https://imgur.com/IkTg8AN.png)
 
@@ -47,7 +46,7 @@ For views, a `User` logs in, and is taken to a page that shows 3-4 options. For 
 
 and `Customer`s:
 
-1. Schedule a `Cleaner` (view with Cleaner form to schedle appointment)
+1. Schedule a `Cleaner` (view with Cleaner form to schedule appointment)
 2. View Scheduled `Cleaner`s (view with all appointments and their statuses)
 3. Help
 
@@ -84,6 +83,6 @@ This lets rails know that we have two different types of Users that the Conversa
 
 ### Conclusion
 
-Add a little OAuth, user authentications, and some css design to all of this (things that would require blog posts of their own), and this is what a few dozen hours of building a Ruby on Rails app in a nutshell looks like.
+Add a little OAuth, user authentications, and some CSS design to all of this (things that would require blog posts of their own), and this is what a few dozen hours of building a Ruby on Rails app in a nutshell looks like.
 
 Check it out in this video [Spring Cleaners Walkthrough](https://youtu.be/dpEpxpvgnfs).

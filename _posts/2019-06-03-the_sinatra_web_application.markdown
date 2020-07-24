@@ -15,10 +15,10 @@ So to begin, I created my project folder and inserted all of the files that are 
 
 `Gemfile` - contains our gems which sets us up with some tools for our project.
 
-`config.ru` - provides the details for the Rack environment requirements of the application, and starts a server that's going to be able to respond to requests for applications built in this file.
+`config.ru` - provides the details for the Rack environment requirements of the application and starts a server that's going to be able to respond to requests for applications built in this file.
 
 `CODE_OF_CONDUCT.md`- entails standards community needs to uphold when working together on project contribution.
-License.txt - document providing protection to contributers and users of a project.
+License.txt - document providing protection to contributors and users of a project.
 
 `Rakefile` - a directory where Rake tasks are defined.
 
@@ -32,7 +32,7 @@ License.txt - document providing protection to contributers and users of a proje
 
 ## When building, why not build something that could be beneficial to your every day life?
 
-I find it easiest, when taking on a project such as this, to visualize creating something that you would actually deem useful in your everyday life. This enabled me to not only code my application based on theory, but to modify as I build through actual utilization of the application as I run into error or user based need/feature. Currently, I'm studing in what's called a yeshiva, where most of my day to day tasks include studying Jewish law and translating the text. Here, the idea that I came up with was to build a website where I could create a dictionary that I could copy and paste a section of Hebrew and Aramaic words into, that would then be parsed through to delete any repetitive words owned by that User, construct a table, and then I could translate each word in that table one by one.
+I find it easiest, when taking on a project such as this, to visualize creating something that you would actually deem useful in your everyday life. This enabled me to not only code my application based on theory, but to modify as I build through actual utilization of the application as I run into error or user-based need/feature. Currently, I'm studying in what's called a yeshiva, where most of my day to day tasks include studying Jewish law and translating the text. Here, the idea that I came up with was to build a website where I could create a dictionary that I could copy and paste a section of Hebrew and Aramaic words into, that would then be parsed through to delete any repetitive words owned by that User, construct a table, and then I could translate each word in that table one by one.
 
 ### Filling Everything Out
 
@@ -91,4 +91,3 @@ After all the above steps are taken care of, the Controllers and Views are next.
 Any CSS and JS files should be added to a `public` folder that you put into your main directory. In Sinatra it's the default directory where such static files should be served from.
 
 Take a look at a video walkthrough of my project in action: [Gemara Dictionary](https://youtu.be/KBymCwTrjoM)!
-
