@@ -619,3 +619,4 @@ function playAgainWithNewName() {
 
 And that's how you create the front end of a Snake game.
 
+To add the backend, that's another story.
